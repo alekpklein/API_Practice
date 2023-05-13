@@ -1,0 +1,82 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#joke-text {
+  position: relative;
+  height: 40vh;
+  width: 50vh;
+  justify-self: center;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+  text-shadow: 0cm;
+  color: white;
+  background: none;
+  z-index: 1;
+}
+.main {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: url('./thorgif.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 300px;
+  height: 60px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background: #7FD885;
+  margin-top: 80px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  filter: brightness(150%);
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button {
+    box-shadow: 5px, 5px, 30px, 20px rgba(0, 0, 0, 0.5);
+  }
+}
