@@ -15,8 +15,8 @@ body {
 
 #joke-text {
   position: relative;
-  height: 40vh;
-  width: 50vh;
+  max-height: 50vh;
+  max-width: 80vh;
   justify-self: center;
   text-align: center;
   margin-top: 60px;
